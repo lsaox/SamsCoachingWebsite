@@ -157,3 +157,15 @@ margin-top: 30px;
     .btn-primary:hover {
         background-color: #999999;
     }
+    .offer-item {
+        padding: 15px;
+        background-color: #131313;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+    }
+    
+    .offer-item:hover {
+        background-color: #37913e;
+    }
