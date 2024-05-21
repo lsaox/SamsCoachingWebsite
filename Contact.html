@@ -43,6 +43,17 @@
 </head>
 <body>
     <header>
+        <style>
+            .btn-primary:focus,
+            .btn-primary.focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+      
+            .navbar-nav .active {
+                border-bottom: 2px solid rgba(255, 255, 255, 0.863); /* White bar under the active link */
+            }
+        </style>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="border: #020202; padding-right: 50px;">
             <a class="navbar-brand" href="#" style="font-size: 20px;">Sam Millsap Elite Coaching</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +62,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav" style="padding-left: 122px;">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Start Here</a>
@@ -66,17 +77,17 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Application.html">Application</a>
+                        <a class="nav-link " href="Application.html">Application</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#Testimonials" id="navbarDropdownTestimonials" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link  dropdown-toggle" href="Testimonials.html" id="navbarDropdownTestimonials" role="button" aria-haspopup="true" aria-expanded="false">
                             Testimonials
                         </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
+                        <a class="nav-link active" href="Contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">

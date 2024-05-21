@@ -26,3 +26,4 @@ window.addEventListener('scroll', addAnimation);
 
 // Trigger animation initially if element is already in view
 addAnimation();
+
