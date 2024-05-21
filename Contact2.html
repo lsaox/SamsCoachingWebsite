@@ -16,7 +16,7 @@
      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
      <!-- Bootstrap JS -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     
+     <script type="text/javascript" src="https://form.jotform.com/jsform/241363794949169"></script>
    
      
      
@@ -39,13 +39,21 @@
             outline: none !important;
             box-shadow: none !important;
         }
-        body{
-            font-family:'BodyFont';
-        }
     </style>
 </head>
 <body>
     <header>
+        <style>
+            .btn-primary:focus,
+            .btn-primary.focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+      
+            .navbar-nav .active {
+                border-bottom: 2px solid rgba(255, 255, 255, 0.863); /* White bar under the active link */
+            }
+        </style>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="border: #020202; padding-right: 50px;">
             <a class="navbar-brand" href="#" style="font-size: 20px;">Sam Millsap Elite Coaching</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +62,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav" style="padding-left: 122px;">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Start Here</a>
@@ -69,37 +77,43 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Application.html">Application</a>
+                        <a class="nav-link " href="Application.html">Application</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#Testimonials" id="navbarDropdownTestimonials" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link  dropdown-toggle" href="Testimonials.html" id="navbarDropdownTestimonials" role="button" aria-haspopup="true" aria-expanded="false">
                             Testimonials
                         </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
+                        <a class="nav-link active" href="Contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <polyline points="3 7 12 13 21 7" />
+                            </svg>
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container" style="font-family: BodyFont;">
-            <h1 >Customer Service</h1>
-            <p>We are committed to providing excellent customer service to our clients. If you have any questions, concerns, or issues, please feel free to reach out to us. You can contact us via email at <Bold>sammumillsap@gmail.com and we will work on fixing any issues you are facing</Bold>.</p>
-            <p>Alternatively, you can use the Customer service-related section of our website to submit your inquiries or report any problems. Our team will respond to all customer service issues promptly to ensure your satisfaction.</p>
-            <a href="Contact2.html" class="btn btn-primary">CUSTOMER SERVICE FORM</a>
-        </div>
-
+   <!-- Inquire with Sam Millsap section -->
+   <div class="container mt-5">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-4">
+                <h1 class="text-white" style="font-family: HeaderFont; font-size: 48px; padding-top: 35px;">CUSTOMER SERVICE</h1>
+                <div>
+                
+                </div>
             </div>
         </div>
-      
-  
+    </div>
+    
         <body>
      
        
@@ -114,10 +128,3 @@
         </body>
         </html>
    
-
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
