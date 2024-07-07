@@ -32,7 +32,34 @@
             });
         });
     </script>
-    
+      <style>
+        .animated-gradient-text-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .animated-gradient-text {
+            font-size: 6em; /* Adjust the font size as needed */
+            background-image: linear-gradient(45deg, #8d0002, #cbff3b, #b8000f, #cbff3b, #c90000, #cbff3b, #cbff3b, #dd0320, #d9ff4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animateGradient 10s linear infinite alternate-reverse;
+            font-family: HeaderFont;
+            
+        }
+
+        @keyframes animateGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
    
 </head> <style>
         .btn-primary:focus,
@@ -101,7 +128,7 @@
             </div>
         </nav>
     </header>
-    <section class="section" id="section">
+    <section class="section" id="section" style="background-image: url('assets/header3.png');  background-size: 100%; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -112,24 +139,17 @@
                         adversity that true fulfillment is found. My mission is to assist you in mastering the areas of life you're striving to 
                         enhance, whether it's in Business, Fitness, or overall Wellness.</p>
                     <div class="text-center mt-4">
-                        <a href="Fitnesscoaching.html" class="btn btn-primary btn-lg btn-opacity" style="background-color: #4d4c4c; transition: background-color 1s; outline: none !important;font-family:'bodyfont'">
+                        <a href="Fitnesscoaching.html" id="changeBackgroundButton" class="btn btn-primary btn-lg btn-opacity" style="background-color: #4d4c4c; transition: background-color 1s; outline: none !important;font-family:'bodyfont'">
                             Start the Change <span class="arrow">&rarr;</span>
                         </a>
-                    </div>
-                </div>
-                <div class="col-lg-6" style="padding-left: 65px; padding-top: 70px;"  >
-                    <div class="glow-container">
-                        <img src="assets/Screenshot__25_-removebg-preview.png" alt="Image" class="img-fluid glow">
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-    <section class="about-us-section py-5" style="background-image: url('cool_background.jpg'); background-size: cover; color: #fff; text-align: center; font-family:'bodyfont'">
-        <div class="container" style="padding-top: 120px;">
+   
+    <section class="about-us-section py-5" style="background-image: url('assets/Believe in yourself and all that you are. (8).png'); background-size: 100%; color: #fff; text-align: center; font-family:'bodyfont' m">
+        <div class="container" style="padding-top: 60px;">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h2 class="section-title" style="font-family: HeaderFont; color: #ffc107; font-size: 36px;font-family:'bodyfont'">MY MISSION</h2>
+                    <h2 class="section-title" style="font-family: HeaderFont; color: #ffc107; font-size: 36px;">MY MISSION</h2>
                     <p class="section-description" style="font-size: 20px; ">I am just a young man trying to do the best I can with the goal of helping others do the same. I want to change the world one person at a time.</p>
                     <ul class="list-unstyled">
                         <li style="font-size: 24px;"><strong style="color: #ffc107; font-family:'bodyfont'" data-aos-duration="1000"> Mission:</strong> To empower individuals to unlock their full potential and achieve success in their personal and professional lives.</li>
@@ -138,6 +158,7 @@
             </div>
         </div>
     </section>
+
     <section class="container mt-5">
         <div class="row">
             <div class="col-lg-6 mb-4 position-relative">
@@ -172,7 +193,7 @@
             </div>
         </div>
     </section>
-    
+ 
    
     <section class="join-coaching-section" style="padding-top: 76px; text-align: center; background-image: url('path_to_your_image.jpg'); background-size: cover;">
         <div class="container">
@@ -210,7 +231,29 @@
             </div>
         </div>
     </section>
+    <section class="animated-gradient-text-section">
+        <h2 class="animated-gradient-text">STAY CONNECTED</h2>
+           <!-- Instagram icon -->
     
+    </section>
+    <section id="stayconnnected" style="text-align: center; padding-bottom: 70px;">
+    <p><li class="list-inline-item mr-3">
+        <a href="https://www.instagram.com/smillsap02/" target="_blank" class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram social-icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.459));">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+        </a>
+    </li>
+    <!-- TikTok icon -->
+    <li class="list-inline-item">
+        <a href="https://www.tiktok.com/@notsmillsap02" target="_blank" class="text-white">
+            <img src="assets/tiktok (1).png" alt="TikTok" width="35" height="35" style="filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.452));">
+        </a>
+    </li>
+</p>
+</section> 
  
       <footer class="footer bg-black text-white py-5 " style="font-family: HeaderFont ">
         <div class="container" style="background-color: #000000;" >
@@ -246,7 +289,18 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        const section = document.getElementById('section');
+        const button = document.getElementById('changeBackgroundButton');
+    
+        button.addEventListener('mouseenter', () => {
+            section.style.backgroundImage = "url('assets/Believe in yourself and all that you are. (3).png')"; // Change to your cool background image
+        });
+    
+        button.addEventListener('mouseleave', () => {
+            section.style.backgroundImage = "url('assets/header3.png')"; // Change back to the original background image
+        });
+    </script>
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -193,7 +193,11 @@ margin-top: 30px;
         margin-bottom: 20px;
     }
     
-    
-    
+    #section:hover {
+        background-image: url('Believe in yourself and all that you are. (3).png'); /* Change to your cool background image */
+    }
+    #section {
+        transition: background-image 1s ease; /* Add smooth transition effect */
+    }
 
   
